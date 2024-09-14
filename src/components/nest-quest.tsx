@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "~/components/ui/button";
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+// import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Input } from "~/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import {
@@ -690,17 +690,17 @@ export function NestQuestComponent() {
 
   return (
     <div className="min-h-screen bg-background text-foreground p-8">
-      <SignedIn>
+      {/* <SignedIn> */}
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-4xl font-bold text-primary">
             NestQuest: Job Offer Comparison Tool
           </h1>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
+          {/* <SignedOut> */}
+            {/* <SignInButton /> */}
+          {/* </SignedOut> */}
+          {/* <SignedIn> */}
+            {/* <UserButton /> */}
+          {/* </SignedIn> */}
         </div>
         <Tabs defaultValue="add" className="max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-8">
@@ -1395,7 +1395,7 @@ export function NestQuestComponent() {
             )}
           </TabsContent>
         </Tabs>
-      </SignedIn>
+      {/* </SignedIn>
 
       <SignedOut>
         <Card className="mt-8">
@@ -1409,7 +1409,7 @@ export function NestQuestComponent() {
             </SignInButton>
           </CardContent>
         </Card>
-      </SignedOut>
+      </SignedOut> */}
     </div>
   );
 }
